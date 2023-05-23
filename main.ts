@@ -15,8 +15,9 @@ controller.A.onEvent(ControllerButtonEvent.Released, function () {
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
-scene.setBackgroundImage(assets.image`TheStage`)
+scene.setBackgroundImage(assets.image`myImages.image0`)
 music.play(music.stringPlayable("D - C - D - E - ", 80), music.PlaybackMode.LoopingInBackground)
 game.splash("Press (A) to play!")
 music.stopAllSounds()
 mySprite = sprites.create(assets.image`A static`, SpriteKind.Player)
+mySprite.sayText("Press (A) to Click Me!", 2000, false)
